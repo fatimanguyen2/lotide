@@ -1,4 +1,4 @@
-function findKeyByValue(obj, value) {
+const findKeyByValue = function(obj, value) {
   for (const key of Object.keys(obj)) {
     if (obj[key] === value) {
       return key;
@@ -11,7 +11,7 @@ function findKeyByValue(obj, value) {
   //   }
   // }
   // return undefined;
-}
+};
 
 
 
@@ -23,8 +23,8 @@ const assertEqual = function(actual, expected) {
   }
 };
 
-const bestTVShowsByGenre = { 
-  sci_fi: "The Expanse",
+const bestTVShowsByGenre = {
+  scifi: "The Expanse",
   comedy: "Brooklyn Nine-Nine",
   drama:  "The Wire"
 };
