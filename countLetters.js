@@ -15,6 +15,6 @@ const countLetters = str => {
     } else {
       obj[char] = 1;
     }
-    }
+  }
   return obj;
-  };
+};

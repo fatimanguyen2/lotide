@@ -30,9 +30,9 @@ const middle = arr => {
     return [arr[index - 1], arr[index]];
   };
   // if array more than 2 elements and odd number --> return single middle elemnt
-  if (overTwoElements(arr) && isOdd(arr)){
+  if (overTwoElements(arr) && isOdd(arr)) {
     return singleMiddle(arr);
-  } else if (overTwoElements(arr) && !isOdd(arr)){
+  } else if (overTwoElements(arr) && !isOdd(arr)) {
     return doubleMiddle(arr);
   } else {
     return [];
@@ -41,7 +41,7 @@ const middle = arr => {
 //array more than 2 elements and even number --> return 2 middle elemens
 
 
-assertArraysEqual(middle([1]), [])
+assertArraysEqual(middle([1]), []);
 assertArraysEqual(middle([1, 2]), []);
 assertArraysEqual(middle([1, 2, 3]), [2]);
 assertArraysEqual(middle([1, 2, 3, 4, 5]), [3]);
