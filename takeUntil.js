@@ -1,3 +1,4 @@
+const assertArraysEqual = require('./assertArraysEqual');
 const takeUntil = function(array, callback) {
   const takenElement = [];
   for (item of array) {
@@ -10,20 +11,6 @@ const takeUntil = function(array, callback) {
   return takenElement;
 };
 
-const assertArraysEqual = (arr1, arr2) => {
-  let longest;
-  if (arr1.length > arr2.length) {
-    longest = arr1;
-  } else {
-    longest = arr2;
-  }
-  for (let i = 0; i < arr1.length; i++) {
-    if (arr1[i] !== arr2[i]) {
-      return console.log(`🛑🛑🛑 Assertion Failed: ${arr1} !== ${arr2}`);
-    }
-  }
-  return console.log(`✅✅✅ Assertion Passed: ${arr1} === ${arr2}`);
-};
 
 const data1 = [1, 2, 5, 7, 2, -1, 2, 4, 5];
 const results1 = takeUntil(data1, x => x < 0);

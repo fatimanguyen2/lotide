@@ -1,3 +1,4 @@
+const assertArraysEqual = require('./assertArraysEqual');
 const without = (source, itemsToRemove) => {
   let result = [];
   for (let item of source) {
@@ -18,14 +19,6 @@ const without = (source, itemsToRemove) => {
 // console.log(without(["1", "2", "3"], [1, 2, "3"])); // => ["1", "2"]
 
 
-const assertArraysEqual = (arr1, arr2) => {
-  for (let i = 0; i < arr1.length; i++) {
-    if (arr1[i] !== arr2[i]) {
-      return console.log(`🛑🛑🛑 Assertion Failed: ${arr1} !== ${arr2}`);
-    }
-  }
-  return console.log(`✅✅✅ Assertion Passed: ${arr1} === ${arr2}`);
-};
 
 const words = ["hello", "world", "lighthouse"];
 without(words, ["lighthouse"]); // no need to capture return value for this test case

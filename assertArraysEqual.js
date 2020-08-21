@@ -13,4 +13,4 @@ const assertArraysEqual = (arr1, arr2) => {
   return console.log(`✅✅✅ Assertion Passed: ${arr1} === ${arr2}`);
 };
 
-assertArraysEqual([1, 2], [1, 2, 3, 4, 5, 6]);
+module.exports = assertArraysEqual;
