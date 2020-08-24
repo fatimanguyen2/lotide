@@ -4,7 +4,7 @@ const overTwoElements = arr => arr.length > 2;
 const isOdd = arr => arr.length % 2;
 const singleMiddle = function(arr) {
   let index = Math.floor(arr.length / 2);
-  return arr[index];
+  return [arr[index]];
 };
 const doubleMiddle = arr => {
   let index = arr.length / 2;
