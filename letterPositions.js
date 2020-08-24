@@ -13,8 +13,8 @@ const letterPositions = function(sentence) {
   }
   return results;
 };
-
-assertArraysEqual(letterPositions('hello')['h'], [0]);
-assertArraysEqual(letterPositions('hello')['e'], [1]);
-assertArraysEqual(letterPositions('hello')['l'], [2, 3]);
-assertArraysEqual(letterPositions('hello')['o'], [4]);
+module.exports = letterPositions;
+// assertArraysEqual(letterPositions('hello')['h'], [0]);
+// assertArraysEqual(letterPositions('hello')['e'], [1]);
+// assertArraysEqual(letterPositions('hello')['l'], [2, 3]);
+// assertArraysEqual(letterPositions('hello')['o'], [4]);

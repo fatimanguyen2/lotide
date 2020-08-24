@@ -15,5 +15,5 @@ const map = function(array, callback) {
   return results;
 };
 
-
-assertArraysEqual(map(words, word => 'meow'), ['meow', 'meow', 'meow', 'meow', 'meow' ]);
+module.exports = map;
+// assertArraysEqual(map(words, word => 'meow'), ['meow', 'meow', 'meow', 'meow', 'meow' ]);

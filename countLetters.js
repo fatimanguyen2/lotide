@@ -13,4 +13,4 @@ const countLetters = str => {
   return obj;
 };
 
-assertEqual(1,1)
+module.exports = countLetters;
